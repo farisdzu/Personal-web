@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.cdnfonts.com/css/inner-vintage" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/vintage-3');
+        @import url('https://fonts.cdnfonts.com/css/shoese-flower');
+        @import url('https://fonts.cdnfonts.com/css/zumabo');
+        @import url('https://fonts.cdnfonts.com/css/freedom45');
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+
+            width: 100vw;
+            height: 10vh;
+            font-family: vintage;
+            background-image: url(bag2.png);
+
+            background-size: cover;
+            display: flex;
+            color: #ffffff;
+            justify-content: center;
+
+
+        }
+
+        .navbar-brand {
+
+            padding-left: 90px;
+            font-family: poppins;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+        }
+
+        .navbar-item {
+
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            font-family: montserrat;
+            /* biar titiknya hilang */
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin: 15px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+
+
+        /* hero */
+        .hero {
+            background-image: url(bag2.png);
+            background-size: cover;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .areatitle {
+            padding: 100px;
+            width: 30%;
+            height: 100%;
+
+        }
+
+        .text-title {
+            line-height: 70px;
+            color: #ffffff;
+            margin-top: 120px;
+            font-weight: bolder;
+            font-family: freedom45;
+            word-spacing: 10px;
+            font-size: 2.8em;
+        }
+
+        .text-tagline {
+            font-family: poppins;
+            font-size: 1.em;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+
+        .button-explore {
+            margin-top: 50px;
+        }
+
+        .btn-explore {
+            border: 2px solid #FAA018;
+            padding: 10px 25px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 20px;
+            color: #FAA018;
+            font-family: Poppins;
+            text-decoration: none;
+        }
+
+        .btn-daftar {
+            border-radius: 5px;
+
+            padding: 10px 25px;
+            background: #FAA018;
+            margin: 5px;
+            font-size: 20px;
+            color: #F8F0E5;
+            font-family: Poppins;
+            text-decoration: none;
+        }
+
+
+        .area-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .home-item {
+            background-color: #FAA018;
+            padding: 10px 20px;
+            border-radius: 100px;
+            color: #ffffff;
+        }
+
+        .service {
+            width: 100vw;
+            height: 120vh;
+            justify-content: center;
+            display: flex;
+            background-image: url(bag5.png);
+            background-size: cover;
+        }
+
+        .areaservice {
+            width: 100vw;
+            font-family: poppins;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .tit-service {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: #4948D8;
+            font-size: 20px;
+        }
+
+        .des-service1 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: medium;
+            margin-top: -5px;
+        }
+
+        .des-service2 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .dtt {
+            margin-top: 20px;
+        }
+
+        .dtd {
+            margin-top: 10px;
+        }
+
+        .servicebox {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-direction: row;
+        }
+
+        .cardarea {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box1 {
+            height: 350px;
+            width: 250px;
+            padding: 10px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            margin-right: 55px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px #2f2f2f5d;
+            flex-direction: column;
+
+        }
+
+        .box2 {
+            height: 350px;
+            width: 250px;
+            padding: 10px;
+            background: #ffffff;
+            display: flex;
+            margin-right: 55px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px #2f2f2f5d;
+            flex-direction: column;
+        }
+
+        .box3 {
+            height: 350px;
+            width: 250px;
+            padding: 10px;
+            background: #ffffff;
+            display: flex;
+            margin-right: 55px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px #2f2f2f5d;
+            flex-direction: column;
+
+        }
+
+        .box4 {
+            height: 350px;
+            width: 225px;
+            padding: 10px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 20px #2f2f2f5d;
+            flex-direction: column;
+
+        }
+
+        .aboutme {
+            background-image: url(bag2.png);
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .imgaboutme {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .abtitle {
+            margin-bottom: 20px;
+            font-family: freedom45;
+            color: #FAA018;
+            font-size: larger;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-right: 50px;
+        }
+
+
+        .ab {
+            width: 30%;
+        }
+
+        .pab{
+            justify-content: center;
+            align-items: center;
+            
+            width: 50%;
+            margin: 50px;
+        }
+        .abd{
+            width: 500px;
+            border-radius: 30px;
+            padding: 30px;
+            background-color: #ffffff00;
+            color: #ffffff;
+            font-family: montserrat;
+            margin-top: 50px;
+            font-size: larger;
+            font-weight: bold;
+            
+        }
+        .subabd{
+
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-brand"> <img src="psp.png" style="width: 60px;" alt="">
+            <p style="font-family: poppins;">Personal Blog</p>
+        </div>
+        <div class="navbar-item">
+            <div class="listitem">
+                <ul>
+                    <!-- kasih a/achor biar bisa tombol -->
+                    <li><a class="home-item" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero">
+            <div class="areatitle">
+                <div class="text-title">
+                    <p>it's<br>My Personal Website</p>
+                </div>
+                <div class="text-tagline">
+                    <p>Hello everyone, This my personal web. There are many information about me, like my skils, my
+                        education, my contact etc.</p>
+                </div>
+                <div class="button-explore">
+                    <a href="https://www.instagram.com/persija/" class="btn-daftar">Contact</a>
+                    <a href="https://www.instagram.com/persija/" class="btn-explore">About Me</a>
+
+                </div>
+            </div>
+            <div class="area-image">
+                <div class="img-brand">
+                    <img src="pp2.png" width="530px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service">
+        <div class="areaservice">
+            <div class="tit-service">
+                <h3>SERVICE</h3>
+            </div>
+            <div class="des-service1">
+                <H1>Our service ! Let's check it out</H1>
+            </div>
+            <div class="des-service2">
+                <p>
+                    <center> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, praesentium, <br>ipsa
+                        quisquam nostrum maiores maxime quos quo sunt ex, architecto unde fuga aspernatur delectus
+                        tenetur.</center>
+                </p>
+            </div>
+            <div class="cardarea">
+                <div class="box1">
+                    <div class="dimg">
+                        <img src="dg.png" width="90px" alt="">
+                    </div>
+                    <div class="dtt">
+                        <h3>Design Graphic</h3>
+                    </div>
+                    <div class="dtd">
+                        <center> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nam.</center>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="dimg">
+                        <img src="wd.png" width="90px" alt="">
+                    </div>
+                    <div class="dtt">
+                        <h3>Web Dev</h3>
+                    </div>
+                    <div class="dtd">
+                        <center> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nam.</center>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="dimg">
+                        <img src="da.png" width="90px" alt="">
+                    </div>
+                    <div class="dtt">
+                        <h3>Android Dev</h3>
+                    </div>
+                    <div class="dtd">
+                        <center> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nam.</center>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="aboutme">
+
+
+
+        <div class="imgaboutme">
+            <img src="pp1.png" style="width: 500px;" alt="">
+        </div>
+
+        <div class="pab">
+
+
+            <div class="abtitle">
+                <h1>About Me</h1>
+            </div>
+            <div class="abd">
+                <div class="subabd"><h2>Who i am</h2></div>
+                
+                <p>Hello my name is Faris Dzu Khairil Muna, but all of my friend call me Faris. I was born in Tangerang
+                    14 january 2008 so now my age is 14 years old. My dream is to become a programmer.  For the junior and senior high school, i study in IDN Boarding school jonggol. I focus to learn about it lessson, I have learn about scratch, buildbox, wordpress, iot, multimedia etc. and now i still learn about html, css, java, and i wil learn about android studio </p>
+            </div>
+            <div class="abtitle">
+                
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
